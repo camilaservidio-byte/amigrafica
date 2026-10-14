@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,23 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>AMI — Diseñadora Gráfica</title>
+    <meta name="description" content="Diseño gráfico, branding, diseño web y packaging para marcas con identidad.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
+    <!-- CSS original -->
     <link rel="stylesheet" href="styless.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-
+    <!-- NAVBAR -->
     <header class="navbar">
-
         <a href="#inicio" class="logo">
             <span class="logo-script">ami</span>
             <span class="logo-dot">●</span>
@@ -30,41 +29,29 @@
 
         <nav>
             <a href="#inicio">Inicio</a>
-            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#proyectos">Proyectos destacados</a>
             <a href="#servicios">Servicios</a>
-            <a href="#proyectos">Proyectos</a>
+            <a href="#proceso">Cómo trabajo</a>
+            <a href="#sobre-mi">Sobre mí</a>
             <a href="#contacto">Contacto</a>
         </nav>
 
-        <a href="https://w.app/bfejmr" class="nav-button">
-            Hablemos →
-        </a>
+        <a href="https://w.app/bfejmr" class="nav-button">Hablemos →</a>
 
-        <button class="menu-button" id="menuButton">
+        <button class="menu-button" id="menuButton" aria-label="Abrir menú">
             ☰
         </button>
-
     </header>
-
-
-    <!-- ================= HERO ================= -->
 
     <main>
 
+        <!-- HERO -->
         <section class="hero" id="inicio">
-
-            <div class="hero-decoration decoration-top">
-                ◜
-            </div>
-
-            <div class="hero-decoration decoration-left">
-                ◜
-            </div>
+            <div class="hero-decoration decoration-top">◜</div>
+            <div class="hero-decoration decoration-left">◜</div>
 
             <div class="hero-content">
-
                 <div class="hero-text">
-
                     <p class="eyebrow">DISEÑO GRÁFICO · BRANDING · WEB</p>
 
                     <h1>
@@ -74,13 +61,12 @@
                     </h1>
 
                     <p class="hero-description">
-                        Creo identidades visuales y experiencias digitales
-                        para marcas que quieren comunicar su esencia
-                        y destacarse.
+                        Creo identidades visuales, branding y sitios web
+                        para marcas que buscan construir una identidad
+                        coherente y memorable.
                     </p>
 
                     <div class="hero-buttons">
-
                         <a href="#proyectos" class="button button-orange">
                             Ver proyectos
                         </a>
@@ -88,36 +74,99 @@
                         <a href="#contacto" class="button button-outline">
                             Hablemos
                         </a>
-
                     </div>
-
                 </div>
-
 
                 <div class="hero-image">
+                    <div class="flower flower-one">✿</div>
+                    <img src="assets/img/img/foto1.nueva.png" alt="AMI diseñadora">
+                    <div class="orange-circle"></div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="flower flower-one">
-                        ✿
+        <!-- PROYECTOS DESTACADOS -->
+        <section class="projects" id="proyectos">
+            <div class="section-heading">
+                <p class="section-label">PROYECTOS DESTACADOS</p>
+                <h2>Proyectos <span>destacados.</span></h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <a href="miga.html" class="project project-large" aria-label="Ver proyecto de branding">
+                    <div class="project-image">
+                        <img src="assets/img/img/branding,png.png" alt="Proyecto de branding">
                     </div>
 
-                    <img src="assets/img/img/foto1.nueva.png" alt="AMI diseñadora">
+                    <div class="project-overlay">
+                        <p>BRANDING</p>
+                        <h3>Identidad visual</h3>
+                    </div>
+                </a>
 
-                    <div class="orange-circle"></div>
+                <a href="presencia-digital.html" class="project" aria-label="Ver proyecto de presencia digital">
+                    <div class="project-image">
+                        <img src="assets/img/img/diseño web.png.jpeg" alt="Proyecto web">
+                    </div>
 
-                </div>
+                    <div class="project-overlay">
+                        <p>WEB DESIGN</p>
+                        <h3>Diseño digital</h3>
+                    </div>
+                </a>
+
+                <a href="packaging.html" class="project" aria-label="Ver proyecto de packaging">
+                    <div class="project-image">
+                        <img src="assets/img/img/packaging.png" alt="Proyecto de packaging">
+                    </div>
+
+                    <div class="project-overlay">
+                        <p>PACKAGING</p>
+                        <h3>Diseño de producto</h3>
+                    </div>
+                </a>
 
             </div>
 
+            <!-- ANTES Y DESPUÉS -->
+            <div class="section-heading">
+                <p class="section-label">ANTES Y DESPUÉS</p>
+                <h2>Una marca, <span>una evolución.</span></h2>
+            </div>
+
+            <article class="project-case-study">
+                <div class="before-after-images">
+
+                    <figure class="before-after-image">
+                        <img
+                            src="assets/img/img/antesydespues.png"
+                            alt="Identidad visual de Ronda antes del rediseño">
+                    </figure>
+
+                    <figure class="before-after-image">
+                        <img
+                            src="assets/img/img/ronda.png"
+                            alt="Identidad visual de Ronda después del rediseño">
+                    </figure>
+
+                </div>
+
+                <div class="project-case-text">
+                    <p>
+                        Ronda es una yerba mate pensada para compartir.
+                        Su identidad parte de la imagen del mate visto desde arriba:
+                        anillos, ritmo y color para una marca que se pasa de mano en mano.
+                        Verde yerba, lima ácido y coral, en un sistema gráfico que se repite
+                        en cada bolsa, lata y caja.
+                    </p>
+                </div>
+            </article>
         </section>
 
-
-        <!-- ================= FRASE ================= -->
-
+        <!-- MANIFIESTO -->
         <section class="manifesto">
-
-            <p>
-                Las ideas también tienen una identidad.
-            </p>
+            <p>Las ideas también tienen una identidad.</p>
 
             <h2>
                 Hagamos que la tuya
@@ -125,39 +174,162 @@
             </h2>
 
             <div class="marquee">
-
                 <div class="marquee-content">
                     BRANDING ✦ DISEÑO WEB ✦ SOCIAL MEDIA ✦ PACKAGING ✦ IDENTIDAD VISUAL ✦
                     BRANDING ✦ DISEÑO WEB ✦ SOCIAL MEDIA ✦ PACKAGING ✦ IDENTIDAD VISUAL ✦
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- ================= SOBRE MI ================= -->
-
-        <section class="about" id="sobre-mi">
-
-            <div class="about-image">
-
-                <div class="about-number">
-                    01
-                </div>
-
-                <div class="about-circle"></div>
-
-                <img src="assets/img/img/foto2.nueva.png" alt="Sobre AMI">
-
+        <!-- SERVICIOS -->
+        <section class="services" id="servicios">
+            <div class="section-heading">
+                <p class="section-label">LO QUE PUEDO HACER POR VOS</p>
+                <h2>Mis Servicios <span>para tu marca.</span></h2>
             </div>
 
+            <div class="services-grid">
+
+                <!-- SERVICIO 1: BRANDING -->
+                <a href="miga.html" class="service-card">
+
+                    <div class="service-image">
+                        <img src="assets/img/img/branding,png.png" alt="Construcción de marca">
+                    </div>
+
+                    <div class="service-info beige">
+                        <span class="service-number">01</span>
+
+                        <h3>Construcción de marca</h3>
+
+                        <p>
+                            Creamos una identidad visual coherente que
+                            represente la esencia y personalidad de tu negocio.
+                        </p>
+
+                        <ul>
+                            <li>Branding e identidad visual</li>
+                            <li>Diseño de logotipo</li>
+                            <li>Paleta cromática y tipografías</li>
+                            <li>Sistema visual y aplicaciones</li>
+                            <li>Rebranding y actualización de marca</li>
+                        </ul>
+
+                        <span class="service-icon">✦</span>
+                    </div>
+                </a>
+
+                <!-- SERVICIO 2: PRESENCIA DIGITAL -->
+                <a href="presencia-digital.html" class="service-card">
+
+                    <div class="service-image">
+                        <img src="assets/img/img/diseño web.png.jpeg" alt="Presencia digital">
+                    </div>
+
+                    <div class="service-info orange">
+                        <span class="service-number">02</span>
+
+                        <h3>Presencia digital</h3>
+
+                        <p>
+                            Diseñamos experiencias digitales y piezas visuales
+                            para que tu marca se comunique de manera clara.
+                        </p>
+
+                        <ul>
+                            <li>Diseño y desarrollo web</li>
+                            <li>Diseño para redes sociales</li>
+                            <li>Contenido visual para marcas</li>
+                            <li>Piezas gráficas digitales</li>
+                            <li>Diseño de interfaces</li>
+                        </ul>
+
+                        <span class="service-icon">↗</span>
+                    </div>
+                </a>
+
+                <!-- SERVICIO 3: PACKAGING -->
+                <a href="packaging.html" class="service-card">
+
+                    <div class="service-image">
+                        <img src="assets/img/img/packaging.png" alt="Packaging y diseño de producto">
+                    </div>
+
+                    <div class="service-info dark">
+                        <span class="service-number">03</span>
+
+                        <h3>Packaging y diseño de producto</h3>
+
+                        <p>
+                            Llevamos la identidad de tu marca a piezas físicas
+                            que acompañan y diferencian tus productos.
+                        </p>
+
+                        <ul>
+                            <li>Diseño de packaging</li>
+                            <li>Etiquetas y envoltorios</li>
+                            <li>Stickers personalizados</li>
+                            <li>Papelería de marca</li>
+                            <li>Aplicaciones gráficas</li>
+                        </ul>
+
+                        <span class="service-icon">✎</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- CÓMO TRABAJO -->
+        <section class="process" id="proceso">
+            <div class="process-title">
+                <p class="section-label">CÓMO TRABAJO</p>
+
+                <h2>
+                    De la idea
+                    <span>al diseño.</span>
+                </h2>
+            </div>
+
+            <div class="process-grid">
+
+                <div class="process-item">
+                    <span>01</span>
+                    <h3>Conocemos</h3>
+                    <p>Hablamos sobre tu marca, tus objetivos y tus ideas.</p>
+                </div>
+
+                <div class="process-item">
+                    <span>02</span>
+                    <h3>Conceptualizamos</h3>
+                    <p>Buscamos un concepto que represente lo que querés comunicar.</p>
+                </div>
+
+                <div class="process-item">
+                    <span>03</span>
+                    <h3>Diseñamos</h3>
+                    <p>Transformamos el concepto en una identidad visual.</p>
+                </div>
+
+                <div class="process-item">
+                    <span>04</span>
+                    <h3>Entregamos</h3>
+                    <p>Recibís tu proyecto listo para llevarlo al mundo.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ -->
+        <section class="about" id="sobre-mi">
+            <div class="about-image">
+                <div class="about-number">01</div>
+                <div class="about-circle"></div>
+                <img src="assets/img/img/foto2.nueva.png" alt="Sobre AMI">
+            </div>
 
             <div class="about-text">
-
-                <p class="section-label">
-                    SOBRE MÍ
-                </p>
+                <p class="section-label">SOBRE MÍ</p>
 
                 <h2>
                     Hola, soy
@@ -179,298 +351,14 @@
                 <a href="#contacto" class="text-link">
                     Conoceme un poco más →
                 </a>
-
             </div>
-
         </section>
 
-
-        <!-- ================= SERVICIOS ================= -->
-
-        <section class="services" id="servicios">
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    LO QUE PUEDO HACER POR VOS
-                </p>
-
-                <h2>
-                    Mis <span>Servicios</span>
-                </h2>
-
-            </div>
-
-
-            <div class="services-grid">
-
-
-                <!-- SERVICIO 1 -->
-
-                <article class="service-card">
-
-                    <div class="service-image">
-                        <img src="assets/img/img/branding,png.png" alt="Branding">
-                    </div>
-
-                    <div class="service-info beige">
-
-                        <span class="service-number">
-                            01
-                        </span>
-
-                        <h3>
-                            Branding
-                        </h3>
-
-                        <p>
-                            Construimos una identidad visual
-                            que represente la esencia de tu marca.
-                        </p>
-
-                        <span class="service-icon">
-                            ✦
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-                <!-- SERVICIO 2 -->
-
-                <article class="service-card">
-
-                    <div class="service-image">
-                        <img src="assets/img/img/diseño web.png.jpeg" alt="Diseño Web">
-                    </div>
-
-                    <div class="service-info orange">
-
-                        <span class="service-number">
-                            02
-                        </span>
-
-                        <h3>
-                            Diseño Web
-                        </h3>
-
-                        <p>
-                            Diseños web visuales, funcionales
-                            y pensados para comunicar.
-                        </p>
-
-                        <span class="service-icon">
-                            ↗
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-                <!-- SERVICIO 3 -->
-
-                <article class="service-card">
-
-                    <div class="service-image">
-                        <img src="assets/img/img/social media.png" alt="Social Media">
-                    </div>
-
-                    <div class="service-info light">
-
-                        <span class="service-number">
-                            03
-                        </span>
-
-                        <h3>
-                            Social Media
-                        </h3>
-
-                        <p>
-                            Contenido visual para que tu marca
-                            tenga una presencia coherente en redes.
-                        </p>
-
-                        <span class="service-icon">
-                            ✦
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-                <!-- SERVICIO 4 -->
-
-                <article class="service-card">
-
-                    <div class="service-image">
-                        <img src="assets/img/img/packaging.png" alt="Packaging">
-                    </div>
-
-                    <div class="service-info dark">
-
-                        <span class="service-number">
-                            04
-                        </span>
-
-                        <h3>
-                            Packaging
-                        </h3>
-
-                        <p>
-                            Diseñamos el packaging para que
-                            tu producto también comunique.
-                        </p>
-
-                        <span class="service-icon">
-                            ✎
-                        </span>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PROYECTOS ================= -->
-
-        <section class="projects" id="proyectos">
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    MI TRABAJO
-                </p>
-
-                <h2>
-                    Proyectos que
-                    <span>hablan por sí solos.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="projects-grid">
-
-                <article class="project project-large">
-                    <div class="project-image">
-                        <img src="assets/img/img/branding,png.png" alt="Proyecto de branding">
-                    </div>
-
-                    <div class="project-overlay">
-                        <p>BRANDING</p>
-                        <h3>Identidad visual</h3>
-                        
-                </article>
-
-
-                <article class="project">
-                    <div class="project-image">
-                        <img src="assets/img/img/diseño web.png.jpeg" alt="Proyecto web">
-                    </div>
-
-                    <div class="project-overlay">
-                        <p>WEB DESIGN</p>
-                        <h3>Diseño digital</h3>
-                       
-                    </div>
-                </article>
-
-
-                <article class="project">
-                    <div class="project-image">
-                        <img src="assets/img/img/packaging.png" alt="Proyecto packaging">
-                    </div>
-
-                    <div class="project-overlay">
-                        <p>PACKAGING</p>
-                        <h3>Diseño de producto</h3>
-                       
-                    </div>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PROCESO ================= -->
-
-        <section class="process">
-
-            <div class="process-title">
-
-                <p class="section-label">
-                    ¿CÓMO TRABAJAMOS?
-                </p>
-
-                <h2>
-                    De la idea
-                    <span>al diseño.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="process-grid">
-
-                <div class="process-item">
-                    <span>01</span>
-                    <h3>Conocemos</h3>
-                    <p>
-                        Hablamos sobre tu marca,
-                        tus objetivos y tus ideas.
-                    </p>
-                </div>
-
-                <div class="process-item">
-                    <span>02</span>
-                    <h3>Conceptualizamos</h3>
-                    <p>
-                        Buscamos un concepto que
-                        represente lo que querés comunicar.
-                    </p>
-                </div>
-
-                <div class="process-item">
-                    <span>03</span>
-                    <h3>Diseñamos</h3>
-                    <p>
-                        Transformamos el concepto
-                        en una identidad visual.
-                    </p>
-                </div>
-
-                <div class="process-item">
-                    <span>04</span>
-                    <h3>Entregamos</h3>
-                    <p>
-                        Recibís tu proyecto listo
-                        para llevarlo al mundo.
-                    </p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= CONTACTO ================= -->
-
+        <!-- CONTACTO -->
         <section class="contact" id="contacto">
+            <div class="contact-decoration">◜</div>
 
-            <div class="contact-decoration">
-                ◜
-            </div>
-
-            <p class="section-label">
-                ¿TENÉS UN PROYECTO?
-            </p>
+            <p class="section-label">¿TENÉS UN PROYECTO?</p>
 
             <h2>
                 Hagamos algo
@@ -482,36 +370,26 @@
                 convertirla en algo visual.
             </p>
 
-            <a href="https://wa.link/hkum2z" class="contact-button">
+            <a href="https://wa.link/hkum2z" class="contact-button" target="_blank" rel="noopener noreferrer">
                 Hablemos →
             </a>
-
         </section>
 
     </main>
 
-
-    <!-- ================= FOOTER ================= -->
-
+    <!-- FOOTER -->
     <footer>
-
         <div class="footer-logo">
             <span>ami</span>
             <small>diseñadora</small>
         </div>
 
-        <p>
-            © 2026 AMI Diseñadora. Todos los derechos reservados.
-        </p>
+        <p>© 2026 AMI Diseñadora. Todos los derechos reservados.</p>
 
-        <div class="socials">
-            
-        </div>
-
+        <div class="socials"></div>
     </footer>
 
-
-    <!-- JAVASCRIPT -->
+    <!-- JAVASCRIPT DEL MENÚ -->
     <script src="script.js"></script>
 
 </body>

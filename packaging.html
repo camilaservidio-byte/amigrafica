@@ -1,0 +1,767 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NÉRA | Packaging — AMI Diseñadora</title>
+  <meta name="description" content="Proyecto conceptual de packaging e identidad visual para NÉRA, desarrollado por AMI Diseñadora.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --orange: #ffaf26;
+      --black: #1b1b1b;
+      --cream: #faf9f7;
+      --beige: #eee7de;
+      --light: #f5f2ee;
+      --white: #fff;
+      --script: "Playfair Display", serif;
+      --sans: "DM Sans", sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--black);
+      font-family: var(--sans);
+      overflow-x: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+      width: 100%;
+      min-height: 85px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 6%;
+      background: rgba(250, 249, 247, 0.96);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(27, 27, 27, 0.08);
+      backdrop-filter: blur(10px);
+    }
+
+    .logo {
+      display: flex;
+      align-items: flex-end;
+      gap: 5px;
+    }
+
+    .logo-script {
+      font-family: var(--script);
+      font-style: italic;
+      font-size: 42px;
+      font-weight: 500;
+    }
+
+    .logo-dot {
+      color: var(--orange);
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .logo-text {
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+
+    .back-link {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1px solid var(--orange);
+      padding-bottom: 6px;
+      transition: color 0.3s;
+    }
+
+    .back-link:hover {
+      color: #bd7910;
+    }
+
+    /* PRESENTACIÓN */
+
+    .project-hero {
+      max-width: 1400px;
+      margin: auto;
+      padding: 115px 8% 75px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 25px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .project-label::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--orange);
+    }
+
+    .project-hero h1 {
+      max-width: 1050px;
+      font-size: clamp(55px, 8vw, 110px);
+      line-height: 0.98;
+      font-weight: 500;
+      letter-spacing: -4px;
+    }
+
+    .project-hero h1 span {
+      color: var(--orange);
+      font-family: var(--script);
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .project-description {
+      max-width: 570px;
+      margin-top: 35px;
+      color: #666;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .project-tags span {
+      padding: 10px 16px;
+      border: 1px solid #1b1b1b30;
+      border-radius: 30px;
+      font-size: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-decoration {
+      position: absolute;
+      right: 8%;
+      top: 80px;
+      color: var(--orange);
+      font-family: var(--script);
+      font-size: clamp(100px, 18vw, 220px);
+      font-style: italic;
+      transform: rotate(12deg);
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    /* IMAGEN PRINCIPAL */
+
+    .brand-section {
+      padding: 0 6% 120px;
+    }
+
+    .brand-frame {
+      max-width: 1400px;
+      margin: auto;
+      background: var(--white);
+      border: 1px solid #1b1b1b12;
+    }
+
+    .frame-top {
+      min-height: 60px;
+      padding: 18px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      border-bottom: 1px solid #1b1b1b15;
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .frame-top span:last-child {
+      color: #777;
+    }
+
+    .brand-image {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .frame-bottom {
+      padding: 20px 25px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      border-top: 1px solid #1b1b1b15;
+      color: #666;
+      font-size: 11px;
+      line-height: 1.7;
+    }
+
+    .image-fallback {
+      min-height: 440px;
+      padding: 50px;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+      background: var(--light);
+    }
+
+    .image-fallback strong {
+      font-family: var(--script);
+      font-size: clamp(40px, 7vw, 82px);
+      font-weight: 400;
+    }
+
+    .image-fallback p {
+      max-width: 480px;
+      color: #666;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    /* CONCEPTO CREATIVO */
+
+    .project-story {
+      padding: 120px 8%;
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .story-inner {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      align-items: start;
+      gap: 90px;
+    }
+
+    .story-label {
+      color: var(--orange);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .story-inner h2 {
+      font-size: clamp(42px, 5vw, 68px);
+      line-height: 1.05;
+      font-weight: 500;
+    }
+
+    .story-inner h2 span {
+      color: var(--orange);
+      font-family: var(--script);
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .story-copy p {
+      margin-bottom: 22px;
+      color: #d0d0d0;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .story-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* GALERÍA DE APLICACIONES */
+
+    .gallery-section {
+      padding: 0 6% 120px;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 auto 25px;
+      max-width: 1400px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .section-heading::after {
+      content: "";
+      width: 45px;
+      height: 1px;
+      background: var(--orange);
+    }
+
+    .gallery-grid {
+      max-width: 1400px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .gallery-card {
+      background: var(--white);
+      border: 1px solid #1b1b1b12;
+      overflow: hidden;
+    }
+
+    .gallery-card img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+
+    .gallery-card:hover img {
+      transform: scale(1.035);
+    }
+
+    .gallery-card figcaption {
+      padding: 16px 18px;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: #666;
+      border-top: 1px solid #1b1b1b12;
+    }
+
+    /* CONTACTO */
+
+    .contact {
+      position: relative;
+      min-height: 590px;
+      padding: 110px 7%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .contact-label {
+      margin-bottom: 25px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .contact h2 {
+      max-width: 950px;
+      font-size: clamp(48px, 8vw, 100px);
+      line-height: 0.98;
+      font-weight: 500;
+      letter-spacing: -3px;
+    }
+
+    .contact h2 span {
+      color: var(--orange);
+      font-family: var(--script);
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .contact-description {
+      max-width: 470px;
+      margin: 28px 0 32px;
+      color: #666;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      padding: 17px 30px;
+      background: var(--orange);
+      border-radius: 30px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .contact-button:hover {
+      transform: translateY(-4px);
+      background: #f3a11c;
+    }
+
+    .contact-decoration {
+      position: absolute;
+      right: -25px;
+      bottom: -70px;
+      color: var(--beige);
+      font-family: var(--script);
+      font-size: 220px;
+      font-style: italic;
+      transform: rotate(-15deg);
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 40px 7%;
+      background: var(--black);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .footer-logo .logo-script {
+      font-size: 38px;
+    }
+
+    footer p {
+      color: #aaa;
+      font-size: 11px;
+      line-height: 1.7;
+    }
+
+    .footer-back {
+      font-size: 11px;
+      border-bottom: 1px solid var(--orange);
+      padding-bottom: 5px;
+    }
+
+    .footer-back:hover {
+      color: var(--orange);
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 800px) {
+      .project-hero {
+        padding: 85px 7% 60px;
+      }
+
+      .hero-decoration {
+        top: 30px;
+        right: 2%;
+        opacity: 0.35;
+      }
+
+      .project-hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .story-inner {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .project-story {
+        padding: 85px 7%;
+      }
+
+      .brand-section,
+      .gallery-section {
+        padding: 0 4% 85px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .navbar {
+        min-height: 70px;
+        padding: 0 5%;
+      }
+
+      .logo-script {
+        font-size: 35px;
+      }
+
+      .logo-text {
+        font-size: 10px;
+      }
+
+      .back-link {
+        font-size: 9px;
+        letter-spacing: 0.5px;
+      }
+
+      .project-hero {
+        padding-top: 70px;
+      }
+
+      .project-hero h1 {
+        font-size: 53px;
+      }
+
+      .project-description {
+        font-size: 13px;
+      }
+
+      .frame-top {
+        padding: 15px;
+        font-size: 8px;
+      }
+
+      .frame-bottom {
+        flex-direction: column;
+        gap: 5px;
+        padding: 15px;
+      }
+
+      .image-fallback {
+        min-height: 300px;
+        padding: 28px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact {
+        min-height: 500px;
+        padding: 80px 6%;
+      }
+
+      .contact h2 {
+        font-size: 51px;
+        letter-spacing: -2px;
+      }
+
+      .contact-decoration {
+        font-size: 150px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="index.html" class="logo" aria-label="AMI Diseñadora">
+      <span class="logo-script">ami</span>
+      <span class="logo-dot">●</span>
+      <span class="logo-text">diseñadora</span>
+    </a>
+
+    <a href="index.html#servicios" class="back-link">
+      ← Volver al portfolio
+    </a>
+  </header>
+
+  <main>
+    <!-- PRESENTACIÓN DEL PROYECTO -->
+    <section class="project-hero">
+      <div class="hero-decoration" aria-hidden="true">✳</div>
+
+      <p class="project-label">Proyecto destacado · Packaging</p>
+
+      <h1>
+        Una identidad que se siente en cada <span>detalle.</span>
+      </h1>
+
+      <p class="project-description">
+        Desarrollo de packaging para NÉRA, una marca conceptual de skincare que
+        propone rituales conscientes para una piel real. Un sistema visual sereno
+        y sofisticado que combina tonos naturales, tipografía elegante y recursos
+        gráficos orgánicos para construir una experiencia coherente desde el primer contacto.
+      </p>
+
+      <div class="project-tags">
+        <span>Packaging</span>
+        <span>Identidad visual</span>
+        <span>Dirección de arte</span>
+        <span>Mockups</span>
+      </div>
+    </section>
+
+    <!-- IMAGEN PRINCIPAL -->
+    <section class="brand-section" aria-label="Presentación principal del packaging">
+      <div class="brand-frame">
+        <div class="frame-top">
+          <span>NÉRA · Sistema de packaging</span>
+          <span>Proyecto 03 / Packaging</span>
+        </div>
+
+        <img
+          class="brand-image"
+          src="assets/img/img/packagingnerea.png"
+          alt="Sistema de identidad y packaging de NÉRA skincare"
+          loading="lazy"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        >
+
+        <div class="image-fallback">
+          <strong>NÉRA</strong>
+          <p>
+            Colocá la imagen principal del proyecto en
+            <b>assets/img/img/nera packaging.png</b>. También podés cambiar la
+            ruta del atributo src por la ubicación real de tu archivo.
+          </p>
+        </div>
+
+        <div class="frame-bottom">
+          <span>El universo visual de NÉRA</span>
+          <span>Materiales, color y forma en una identidad coherente.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONCEPTO -->
+    <section class="project-story">
+      <div class="story-inner">
+        <div>
+          <p class="story-label">01 — Concepto creativo</p>
+        </div>
+
+        <div>
+          <h2>Rituales para una piel <span>real.</span></h2>
+
+          <div class="story-copy" style="margin-top: 30px;">
+            <p>
+              La propuesta de NÉRA nace de la idea de transformar el cuidado de
+              la piel en un ritual cotidiano, simple y consciente.
+            </p>
+
+            <p>
+              La paleta combina marfil, arena, verde salvia y tonos profundos
+              para transmitir calma, naturalidad y confianza. La tipografía de
+              alto contraste aporta sofisticación, mientras que las formas
+              orgánicas conectan la identidad con la naturaleza.
+            </p>
+
+            <p>
+              El packaging se plantea como un sistema: tubos, frascos, cajas y
+              etiquetas comparten códigos visuales que refuerzan el reconocimiento
+              de marca y mantienen la coherencia en cada punto de contacto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA DE APLICACIONES -->
+    <section class="gallery-section">
+      <p class="section-heading">02 — Aplicaciones del packaging</p>
+
+      <div class="gallery-grid">
+        <figure class="gallery-card">
+          <img
+            src="assets/img/img/nera crema.png"
+            alt="Packaging de crema hidratante NÉRA"
+            loading="lazy"
+            onerror="this.parentElement.style.display='none';"
+          >
+          <figcaption>Crema hidratante</figcaption>
+        </figure>
+
+        <figure class="gallery-card">
+          <img
+            src="assets/img/img/nera serum.png"
+            alt="Packaging de sérum antioxidante NÉRA"
+            loading="lazy"
+            onerror="this.parentElement.style.display='none';"
+          >
+          <figcaption>Sérum antioxidante</figcaption>
+        </figure>
+
+        <figure class="gallery-card">
+          <img
+            src="assets/img/img/nera mascarilla.png"
+            alt="Packaging de mascarilla purificante NÉRA"
+            loading="lazy"
+            onerror="this.parentElement.style.display='none';"
+          >
+          <figcaption>Mascarilla purificante</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+      <div class="contact-decoration" aria-hidden="true">ami</div>
+
+      <p class="contact-label">¿Tenés una idea en mente?</p>
+
+      <h2>
+        Hagamos que tu marca tenga <span>identidad.</span>
+      </h2>
+
+      <p class="contact-description">
+        Cada proyecto tiene algo especial para contar. Trabajemos juntos para
+        convertir tu idea en una marca auténtica, coherente y memorable.
+      </p>
+
+      <a
+        class="contact-button"
+        href="https://w.app/bfejmr"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Hablemos de tu proyecto <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="index.html" class="logo footer-logo" aria-label="AMI Diseñadora">
+      <span class="logo-script">ami</span>
+      <span class="logo-dot">●</span>
+      <span class="logo-text">diseñadora</span>
+    </a>
+
+    <p>Diseño con intención, marcas con identidad.</p>
+
+    <a href="index.html#servicios" class="footer-back">
+      Volver al portfolio ↑
+    </a>
+  </footer>
+</body>
+</html>
